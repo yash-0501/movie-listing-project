@@ -11,7 +11,7 @@ import {FaHeart, FaDownload, FaBackward, FaArrowLeft, FaVoteYea, FaArrowUp, FaSe
 
 
 const index = {
-  baseURL:"http://localhost:3000/"
+  baseURL:"/"
 }
 
 var i = 3
