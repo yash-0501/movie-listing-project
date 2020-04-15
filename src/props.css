@@ -1,0 +1,20 @@
+h1,h2,h3,h4,h5,h6{padding: 0px; margin: 0px; font-size: normal; font-weight: normal;}
+ul, ol{list-style: none; padding: 0%; margin: 0px;}
+.fixed{position: fixed;}
+.rel{position: relative;}
+.abs{position: absolute;}
+.bl{display: block;}
+.ibl li, .ibl{display: inline-block;}
+.anim{transition: all 0.2s linear 0s;}
+.noul{text-decoration: none;}
+
+.s15{font-size: 15px;}
+
+@keyframes placeholder{
+    0%{
+        background-position: -30vw 0;
+    }
+    100%{
+        background-position: 70vw 0;
+    }
+}
