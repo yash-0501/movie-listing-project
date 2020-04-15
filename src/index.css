@@ -102,28 +102,26 @@ body {
 
 .feed{
   padding-top: 20px;
-  margin-left: 30px;
   width: 100%;
 }
 
  .movies{
+  margin-left: 22px;
    background: white;
-   margin: 2px 5px;
+   margin-top: 2px;
+   margin-bottom: 2px;
  }
 
 
 .feed img{
-  width: 154px;
-  height: 231px;
+  width: 250px;
+  height: 375px;
   border-radius: 5px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0px 0px 10px black;
 }
 
 .feed .item-ph{
-
   background: #f6f7f8;
   background: linear-gradient(to right, #c5c4c4 0%, #d2d2d2 30%,  #cccccc 80%);
   background-size: 100vw;
@@ -164,9 +162,10 @@ body {
 }
 
 .like{
+  font-size: large;
   color: white;
   position: absolute;
-  left: 125px;
+  left: 215px;
   bottom: 10px;
   outline: none;
   z-index: 99999;
@@ -175,7 +174,7 @@ body {
 
 .like:hover{
   color: red;
-  font-size: larger;
+  font-size: x-large;
 }
 
 .title{
@@ -189,13 +188,12 @@ body {
 }
 
 .text-box{
-  width: 134px;
-  height: 210px;
+  width: 230px;
+  height: 355px;
   border-radius: 5px;
   position: absolute;
   display: inline-block;
   background: rgba(0, 0, 0, 0.534);
-  margin: auto;
   padding: 10px;
   z-index: 12;
   position: absolute;
