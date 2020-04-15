@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+}
+
+
+.header{
+  top:0px;
+  right: 0px;
+  left: 0px;
+  height: 45px;
+  z-index: 90000000;
+  background: rgb(255, 255, 255);
+}
+
+.header .logo{
+  left: 3px;
+  width: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .logo img{
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .logo img:hover{
+  background: rgb(19, 18, 18);
+  border-radius: 100%;
+  transition-duration: 1.2s;
+}
+
+.header .searchBox{
+  top: 5px;
+  left: 100px;
+  right: 180px;
+  bottom: 5px;
+  background: rgb(233, 233, 233);
+  border-radius: 30px;
+}
+
+.header .searchBox .query{
+  width: 100%;
+  border: 0px;
+  background: rgba(0,0,0,0);
+  padding: 8px;
+  outline: none;
+  font-size: large;
+}
+
+.header .searchBox .send{
+  top: 2px;
+  bottom: 2px;
+  right: 2px;
+  border-radius: 30px;
+  background:rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.header .nav{
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.header .nav li{
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+
+.header .nav li:hover{
+  color: black;
+  transition-duration: 1s;
+  background: rgb(233, 233, 233);
+  
+}
+
+.header .nav li a{
+  color: #444444;
+  font-weight: bold;
+}
+
+.header .nav li a:hover{
+  transition-duration: 1s;
+  color: black;
+}
+
+.hclr{
+  height: 45px;
+}
+
+.feed{
+  padding-top: 20px;
+  margin-left: 30px;
+  width: 100%;
+}
+
+ .movies{
+   background: white;
+   margin: 2px 5px;
+ }
+
+
+.feed img{
+  width: 154px;
+  height: 231px;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px black;
+}
+
+.feed .item-ph{
+
+  background: #f6f7f8;
+  background: linear-gradient(to right, #c5c4c4 0%, #d2d2d2 30%,  #cccccc 80%);
+  background-size: 100vw;
+  animation-duration: 1.5s;
+  animation-name: placeholder;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+}
+
+.feed .item-ph:hover{
+  animation-duration: 1.5s;
+}
+
+.feed .movies img:hover{  
+  opacity: 0.85;
+}
+
+.addPin{
+  bottom: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  line-height: 1;
+  border-radius: 100%;
+  border: 0;
+  background: white;
+  box-shadow: 0px 0px 10px black;
+  z-index: 99999;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+}
+
+.addPin:hover{
+  transform: rotate(180deg);
+}
+
+.like{
+  color: white;
+  position: absolute;
+  left: 125px;
+  bottom: 10px;
+  outline: none;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+.like:hover{
+  color: red;
+  font-size: larger;
+}
+
+.title{
+  font-size: 1em;
+  font-weight:lighter;
+  text-align: justifyr;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.text-box{
+  width: 134px;
+  height: 210px;
+  border-radius: 5px;
+  position: absolute;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.534);
+  margin: auto;
+  padding: 10px;
+  z-index: 12;
+  position: absolute;
+  bottom: 0px;
+  cursor: zoom-in ;
+}
+
+.info{
+  top: 0px;
+  left:0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999999;
+  background: white;
+}
+
+.details{
+  position: relative;
+  margin: 0 auto;
+  width: 362px;
+  min-height: 300px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
+}
+
+.poster img{
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+
+.download{
+  font-size: large;
+  border: none;
+  background: red;
+  margin: 15px;
+  right: 0;
+  border-radius: 20px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.download:hover{
+  font-size: xx-large;
+  background: black;
+  color: red;
+  outline: none;
+  transition-duration: 1.2s;
+}
+
+.back{
+  font-size: medium;
+  border: none;
+  background: black;
+  color: red;
+  margin: 15px;
+  left: 0;
+  border-radius: 20px;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+.back:hover{
+  font-size: x-large;
+  background: red;
+  color: black;
+  outline: none;
+  transition-duration: 1.2s;
+}
+
+.movie-title{
+  position: relative;
+  background: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 20px;
+
+}
+
+.movie-title h1{
+  padding: 4px;
+  font-weight: bolder;
+  letter-spacing: -1.75px;
+  white-space: normal;
+}
+
+.movie-desc{
+  position: relative;
+  padding: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  border-radius: 20px;
+}
+
+.movie-desc h3{
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 4px;
+  display: inline;
+  color: black;
+  white-space: nowrap;
+}
+
+.movie-desc p{
+  font-weight: lighter;
+  display: inline;
+  color: black;
+  letter-spacing: -0.5px;
+}
+
+
+  .heart{
+    font-size: large;
+    border: none;
+    margin: 15px;
+    display: inline;
+    right: 0;
+    border-radius: 20px;
+    z-index: 999999;
+    cursor: pointer;
+    top: 450px;
+    color: rgb(255, 255, 255);
+    background: none;
+  }
+  
+  .heart:hover{
+    font-size: xx-large;
+    color: red;
+    outline: none;
+    transition-duration: 1.2s;
+  }
