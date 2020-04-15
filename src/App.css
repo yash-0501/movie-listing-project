@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes fillIn{
+  from{
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    zoom: 1;
+    opacity: 1;
+  }
+}

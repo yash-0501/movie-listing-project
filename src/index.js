@@ -7,7 +7,7 @@ import logo from "./logo.svg";
 import "./props.css";
 import ReactHover from "react-hover";
 import {FaHeart, FaDownload, FaBackward, FaArrowLeft, FaVoteYea, FaArrowUp, FaSearch} from "react-icons/fa";
-import ReactImageAppear from 'react-image-appear';
+
 
 
 const index = {
@@ -151,7 +151,7 @@ movieInfo = (id) =>{
             
             <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
-            <img className="item-ph anim" 
+            <img className="item-ph animate" 
             src={("http://image.tmdb.org/t/p/w300"+i.poster_path)}
             />
             </ReactHover.Trigger>
@@ -186,10 +186,10 @@ movieInfo = (id) =>{
               }}><FaArrowLeft/></Button>
                 <Button className="download abs"><FaDownload/></Button>
                 <Button className="heart abs"><FaHeart/></Button>
-                <ReactImageAppear 
+                
+                <img className="animate"
                 src={("http://image.tmdb.org/t/p/w342"+movie.poster_path)}
-                animation="fillIn"
-                animationDuration="1.5s"
+                
             />
               </div>
               <div className="content">
@@ -228,7 +228,7 @@ movieInfo = (id) =>{
             <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
             
-            <img className="item-ph anim" 
+            <img className="item-ph animate" 
             src={("http://image.tmdb.org/t/p/w154"+i.poster_path)}
             />
             </ReactHover.Trigger>

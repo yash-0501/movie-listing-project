@@ -262,6 +262,11 @@ body {
   margin-bottom: 4px;
 }
 
+.animate{
+  animation-name: fillIn;
+  animation-duration: 2s;
+}
+
 .download{
   font-size: large;
   border: none;
