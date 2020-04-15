@@ -67,6 +67,16 @@ body {
   cursor: pointer;
   outline: none;
 }
+@media only screen and (max-width: 362px) {
+  .header .searchBox{
+    top: 5px;
+    left: 75px;
+    right: 150px;
+    bottom: 5px;
+    background: rgb(233, 233, 233);
+    border-radius: 30px;
+  }
+}
 
 .header .nav{
   top: 50%;
@@ -103,13 +113,13 @@ body {
 .feed{
   padding-top: 20px;
   width: 100%;
+  text-align: center;
 }
 
  .movies{
-  margin-left: 22px;
-   background: white;
-   margin-top: 2px;
-   margin-bottom: 2px;
+  display: inline-block; 
+  margin: 5px 5px;
+  padding: 3px;
  }
 
 
@@ -218,6 +228,28 @@ body {
   background: white;
   border-radius: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
+}
+
+@media only screen and (max-width: 362px) {
+  .details {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  min-height: 250px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
+  }
+  .poster img{
+    width: calc(100% - 20px);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.651);
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 4px;
+  }
 }
 
 .poster img{
