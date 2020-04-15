@@ -144,6 +144,7 @@ movieInfo = (id) =>{
             
             onClick={()=>{
               this.viewInfo(i.id)
+              window.scrollTo(0,0)
               console.log(i)
             }}
             >
@@ -214,6 +215,7 @@ movieInfo = (id) =>{
             <div  className="movies " key={id}
             
             onClick={()=>{
+              window.scrollTo(0,0)
               this.viewInfo(i.id)
               console.log(i)
             }}
