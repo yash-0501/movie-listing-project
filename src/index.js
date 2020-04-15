@@ -2,12 +2,12 @@ import React, {Component} from "react";
 import ReactDOM,{ render } from "react-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 import {Container, Row, Col, Button} from "react-bootstrap";
-import { card } from './components/cards'
 import './index.css';
 import logo from "./logo.svg";
 import "./props.css";
 import ReactHover from "react-hover";
 import {FaHeart, FaDownload, FaBackward, FaArrowLeft, FaVoteYea, FaArrowUp, FaSearch} from "react-icons/fa";
+import ReactImageAppear from 'react-image-appear';
 
 
 const index = {
@@ -139,8 +139,8 @@ movieInfo = (id) =>{
         <div className="feed">
         
           {items.map((i, id) => (
-            <div className="ibl items">
-            <div  className="movies " key={id}
+            <div className="ibl items ">
+            <div  className="movies" key={id}
             
             onClick={()=>{
               this.viewInfo(i.id)
@@ -152,7 +152,7 @@ movieInfo = (id) =>{
             <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
             <img className="item-ph anim" 
-            src={("http://image.tmdb.org/t/p/w154"+i.poster_path)}
+            src={("http://image.tmdb.org/t/p/w300"+i.poster_path)}
             />
             </ReactHover.Trigger>
             <ReactHover.Hover type='hover'>
@@ -186,7 +186,11 @@ movieInfo = (id) =>{
               }}><FaArrowLeft/></Button>
                 <Button className="download abs"><FaDownload/></Button>
                 <Button className="heart abs"><FaHeart/></Button>
-                <img src={("http://image.tmdb.org/t/p/w342"+movie.poster_path)}/>
+                <ReactImageAppear 
+                src={("http://image.tmdb.org/t/p/w342"+movie.poster_path)}
+                animation="fillIn"
+                animationDuration="1.5s"
+            />
               </div>
               <div className="content">
                 <div className="movie-title">
@@ -223,6 +227,7 @@ movieInfo = (id) =>{
             
             <ReactHover options={optionsCursorTrueWithMargin}>
             <ReactHover.Trigger type='trigger'>
+            
             <img className="item-ph anim" 
             src={("http://image.tmdb.org/t/p/w154"+i.poster_path)}
             />
